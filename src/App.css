@@ -1,0 +1,536 @@
+/* .App {
+  text-align: center;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    font-family: "Fruktur", cursive;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+header {
+  background-color: black;
+  height: 70px;
+  padding-top: 20px;
+}
+
+/* renderProduct */
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.billProducts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  
+  max-width: 100%;
+  height: 600px;
+  margin-top: 20%;
+  margin-right: 10px;
+  text-align: center;
+  padding: 25px;
+  background: rgba(79, 77, 75, 0.275);
+}
+
+.subCard {
+  position: relative;
+
+  max-width: 200%;
+  height: 450px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 25px;
+  background: rgb(26, 18, 18);
+}
+
+.subCardInfo {
+
+  color: rgb(255, 255, 255);
+}
+
+#subCardh2 {
+  position: relative;
+ 
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* ENDrenderProduct */
+
+.imgC {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.toCartButton {
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  left: 88%;
+  top: 33 px;
+}
+
+.viweProductButton {
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+
+  left: 45%;
+  top: 33 px;
+}
+
+.gotoHomeButton {
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+
+  top: 33 px;
+  left: 20px;
+}
+
+.sumT {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  /* text-align: center; */
+}
+/* Bill PAGE */
+
+.billCard {
+
+  width: 400px;
+  max-height: auto;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
+
+  position: absolute;
+  left: 970px;
+  top: 80px;
+}
+
+.billCarddiv {
+
+
+  width: 300px;
+  max-height: 400%;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+
+  right: auto;
+}
+
+.SubbillCarddiv {
+  position: relative;
+  /* box-shadow: 0 0px 0px 0 rgb(0, 0, 0); */
+  /* background-color: rgb(138, 138, 137); */
+  width: 150px;
+
+  min-height: 0px;
+  max-height: 20px;
+  max-width: 300px;
+
+  padding: 50px;
+
+  left: 170px;
+  top: -40px;
+
+  text-align: left;
+}
+
+#totalll {
+  text-align: right;
+}
+
+/* .billCard h1,h2{
+  text-align: right;
+  top: 0px;
+  position: relative;
+} */
+
+#H1 {
+  position: absolute;
+  left: 220px;
+  bottom: 200px;
+}
+
+#BP {
+  position: relative;
+  left: 220px;
+  bottom: unset;
+}
+
+/* .SUBbillCard img{
+  width: auto;
+} */
+
+#sumbill {
+  text-align: center;
+}
+
+#img2 {
+  position: relative;
+  max-width: 100%;
+  max-height: 195px;
+  right: 260px;
+  bottom: 135px;
+  border: 1px solid rgba(0, 0, 0, 0.227);
+}
+
+/* form box */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 60%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.formTab {
+  width: 940px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+
+}
+
+/* Navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #38373767;
+  padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 98%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.4s;
+  cursor: pointer;
+
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.288);
+  color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+}
+#navbar a.viewProduct_bar {
+  background-color: rgb(46, 129, 57);
+  color: white;
+  cursor: pointer;
+}
+#navbar a.cart_bar {
+  background-color: khaki;
+
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+/* Button */
+.buttonInfo {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: rgb(24, 24, 24);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.buttonRemoveCart {
+  border-style: double;
+  color: rgb(0, 0, 0);
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.border_remove_bt {
+  /* border-style: solid; */
+  /* border-color: rgb(255, 255, 255); */
+
+  height: 60px;
+  max-width: 65.5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  position: relative;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.buttonToBill {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: rgb(24, 24, 24);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Cart */
+.productInCart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-style: inset;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 5px;
+  border-left: 2px;
+  border-right: 2px;
+
+  margin-top: 35px;
+}
+
+.cartProduct {
+  /* border-style: dotted; */
+  border-width: 2px;
+  width: 250px;
+  max-height: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.imgCart {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+  max-height: 310px;
+  position: relative;
+}
+
+/* rederALLProduct */
+
+.borderImgProduct {
+
+  height: 310px;
+  max-width: 150%;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+/* infoContent */
+column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.buttomCart {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+}
+/* tables */
+td.Left {
+  width: 300px;
+  height: 200px;
+  text-align: left;
+}
+
+td.Right {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+
+td.Center {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  background-color: #282c34;
+}
+td p {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #f2f2f2;
+  font-family: "Fruktur", cursive;
+}
+
+.CickOn {
+  padding: 2cm;
+  padding-left: 2cm;
+  border-radius: 50px;
+  background-color: rgb(28, 34, 29);
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+}
