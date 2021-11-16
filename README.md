@@ -20,4 +20,11 @@
 <dd>- npm i nodemon</dd>
 
 </dl>
+
+#Start
+
+*   go to folder project with terminal
+*   npm start
+*   npm run dev
+
 for subject web applications KU 2564
