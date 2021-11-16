@@ -1,5 +1,5 @@
 # FurnitureShopCart
-##Use REACT
+## Use REACT
 # Install
 <dl>
 
@@ -21,7 +21,7 @@
 
 </dl>
 
-#Start
+# Start
 
 *   go to folder project with terminal
 *   npm start
